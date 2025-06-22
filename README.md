@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Linktree Clone
+
+A modern, responsive Linktree clone built with [Next.js](https://nextjs.org), featuring user profile creation, custom links, and a sleek UI inspired by Linktree.
+
+## Features
+
+- 🌐 **Next.js 13 App Router**  
+- 🎨 **Responsive design** with Tailwind CSS  
+- 🖼️ **Profile creation**: Add a handle, profile picture, description, and unlimited links  
+- 🔒 **Frontend validation** for user input  
+- 🍃 **API routes** for backend integration (see `/api/add`)  
+- 🚀 **Ready for deployment** on Vercel
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open your browser:**  
+   Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` — Main Next.js app directory (pages, API routes)
+- `components/` — Reusable React components (e.g., Navbar)
+- `public/` — Static assets (e.g., `/generate.png`)
+- `styles/` — Global styles (if any)
+
+## Usage
+
+- Go to `/generate` to create your BitTree profile.
+- Fill in your handle, add links, upload a profile picture, and write a description.
+- Click **Create your BitTree** to save your profile.
+
+## Customization
+
+- Update the logo or styles in `components/Navbar.js`.
+- Modify backend logic in `/api/add` as needed.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy instantly on [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Made with ❤️ using Next.js and Tailwind CSS**
