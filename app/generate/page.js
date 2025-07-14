@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import { useSearchParams } from 'next/navigation'
 
-const page = () => {
+const Generatepage = () => {
   const searchParams = useSearchParams()
   const uri=process.env.NEXT_PUBLIC_HOST;
 
@@ -110,4 +110,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Generatepage
