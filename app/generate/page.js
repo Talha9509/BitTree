@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 
 const page = () => {
   const searchParams = useSearchParams()
+  const uri=process.env.NEXT_PUBLIC_HOST;
 
   const [links, setlinks] = useState([{ link: "", linktext: "" }])
   const [handle, sethandle] = useState(searchParams.get('handle'))
@@ -49,7 +50,7 @@ const page = () => {
       redirect: "follow"
     };
 
-    const r = await fetch("http://localhost:3000/api/add", requestOptions)
+    const r = await fetch(`${uri}/api/add`, requestOptions)
     const result = await r.json()
     if (result.success) {
       toast.success(result.message)
