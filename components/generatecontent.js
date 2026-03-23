@@ -24,6 +24,7 @@ const Generatepage = () => {
   const [generated, setgenerated] = useState(false)
 
   const genratedAccount=()=>{
+    console.log(`${process.env.NEXT_PUBLIC_HOST}/profile/${handle}`)
     router.push(`profile/${handle}`)
   }
   
@@ -84,8 +85,8 @@ const Generatepage = () => {
 
   return (<>
     <div className='bg-[#E9C0E9] md:min-h-[120vh] min-h-[90vh] md:grid md:grid-cols-3 pt-24 px-10 md:px-0'>
-      <div className="col1 flex flex-col justify-end items-center md:col-span-2 md:py-4">
-        <div className='flex flex-col gap-5 my-8'>
+      <div className="col1 flex flex-col justify-end items-center md:col-span-2 md:pt-4">
+        <div className='flex flex-col gap-5 mt-8'>
           <h1 className='font-bold md:text-4xl text-2xl'>Create your BitTree</h1>
           <div className="item">
             <h2 className='font-semibold md:text-2xl text-xl'>Step 1: Claim your Handle</h2>
@@ -109,7 +110,7 @@ const Generatepage = () => {
             <div className="mx-4 flex flex-col">
               <input value={pic || ""} onChange={e => { setpic(e.target.value) }}  type="text" className='bg-white px-4 py-2 mx-2 my-2 focus:outline-pink-500 rounded-full' placeholder='Enter link to your picture' />
               <input value={desc || ""} onChange={e => { setdesc(e.target.value) }}  type="text" className='bg-white px-4 py-2 mx-2 my-2 focus:outline-pink-500 rounded-full' placeholder='Enter Description/Bio' />
-              <button disabled={pic == "" || handle == "" || links[0].linktext == ""} onClick={() => { submitLinks() }} className='p-5 py-2 mx-2 bg-slate-950 text-white font-bold rounded-3xl w-fit my-5 disabled:bg-slate-700  md:text-2xl text-md'>Create your BitTree</button>
+              <button disabled={pic == "" || handle == "" || links[0].linktext == ""} onClick={() => { submitLinks() }} className='p-5 py-2 mx-2 bg-slate-950 text-white font-bold rounded-3xl w-fit mt-5 disabled:bg-slate-700  md:text-2xl text-md'>Create your BitTree</button>
               {/* this is frontend validation and need to do in backend validation also */}
               {/* backend validation is important for security */}
             </div>
@@ -121,7 +122,7 @@ const Generatepage = () => {
       </div>
       </div>
 
-      {generated && <div  className='bg-[#E9C0E9]  pb-20 flex flex-col justify-center items-center'><div className='text-2xl font-bold'>Your BitTree</div>
+      {generated && <div  className='bg-[#E9C0E9]  pb-20 flex flex-col justify-center items-center'><div className='text-3xl font-bold'>Your BitTree</div>
       <button onClick={genratedAccount}  className='p-5 py-2 mx-2 bg-slate-900 text-white font-bold rounded-3xl w-fit my-2 md:text-xl text-md'>BitTree</button>
       </div>}
 

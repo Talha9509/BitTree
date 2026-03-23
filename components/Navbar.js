@@ -19,10 +19,10 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className='hidden md:flex gap-8'>
             <Link href={"/generate"}><li>Products</li></Link>
-            <Link href={"/"}><li>Templates</li></Link>
-            <Link href={"/"}><li>Marketplace</li></Link>
-            <Link href={"/"}><li>Learn</li></Link>
-            <Link href={"/"}><li>Pricing</li></Link>
+            <Link href={"/generate"}><li>Templates</li></Link>
+            <Link href={"/generate"}><li>Marketplace</li></Link>
+            <Link href={"/generate"}><li>Learn</li></Link>
+            <Link href={"/generate"}><li>Pricing</li></Link>
           </ul>
         </div>
 
@@ -47,10 +47,10 @@ const Navbar = () => {
           {menuOpen && (
             <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-lg flex flex-col items-start p-6 gap-4 md:hidden">
               <Link href={"/generate"} onClick={() => setMenuOpen(false)}><span>Products</span></Link>
-              <Link href={"/"} onClick={() => setMenuOpen(false)}><span>Templates</span></Link>
-              <Link href={"/"} onClick={() => setMenuOpen(false)}><span>Marketplace</span></Link>
-              <Link href={"/"} onClick={() => setMenuOpen(false)}><span>Learn</span></Link>
-              <Link href={"/"} onClick={() => setMenuOpen(false)}><span>Pricing</span></Link>
+              <Link href={"/generate"} onClick={() => setMenuOpen(false)}><span>Templates</span></Link>
+              <Link href={"/generate"} onClick={() => setMenuOpen(false)}><span>Marketplace</span></Link>
+              <Link href={"/generate"} onClick={() => setMenuOpen(false)}><span>Learn</span></Link>
+              <Link href={"/generate"} onClick={() => setMenuOpen(false)}><span>Pricing</span></Link>
               <div className="flex flex-col gap-2 w-full">
                  <button className="login bg-gray-100 p-3 rounded-lg font-semibold w-full">Log in</button>
                 <button className="signup text-white bg-gray-800 rounded-full p-3 font-semibold w-full">Sign up free</button>

@@ -4,12 +4,12 @@ A modern, responsive Linktree clone built with [Next.js](https://nextjs.org), fe
 
 ## Features
 
-- 🌐 **Next.js 13 App Router**  
-- 🎨 **Responsive design** with Tailwind CSS  
-- 🖼️ **Profile creation**: Add a handle, profile picture, description, and unlimited links  
-- 🔒 **Frontend validation** for user input  
-- 🍃 **API routes** for backend integration (see `/api/add`)  
-- 🚀 **Ready for deployment** on Vercel
+-  **Next.js 13 App Router**  
+-  **Responsive design** with Tailwind CSS  
+-  **Profile creation**: Add a handle, profile picture, description, and unlimited links  
+-  **Frontend validation** for user input  
+-  **API routes** for backend integration (see `/api/add`)  
+-  **Ready for deployment** on Vercel
 
 ## Getting Started
 
